@@ -34,7 +34,7 @@ int main(){
 
     printf("Digite os valores do vetor:\n");
     for(int x=0; x<n; x++){
-        scanf("%d ", &A[x]);
+        scanf("%d", &A[x]);
     }
 
     bubbleSort(A, n);

@@ -1,41 +1,41 @@
 #include<stdio.h>
-#include<stdlib.h>
 
 void bubbleSort(int *A, int n){
     int i, j, flag, aux;
     
-    for(i=n-1; i<1; i--){
+    for(i=n-1; i>=1; i--){
         flag = 0; //false
-        for(j=0; j<i-1; j++){
+        for(j=0; j<i; j++){
             if(A[j] > A[j+1]){
                 aux = A[j];
                 A[j] = A[j+1];
                 A[j+1] = aux;
 
-                flag = 0; //true
+                flag = 1; //true
             } 
         }
         if(flag == 0){
             break;
         }
     }
+
+    for(i=0; i<n; i++){
+        printf("%d ", A[i]);
+    }
+    printf("\n");
 }
 
 int main(){
-    int n, x, *A;
+    int n;
 
-    printf("Digite o tamanho do vetor:");
+    printf("Digite o tamanho do vetor:\n");
     scanf("%d", &n);
-    A = (int*)malloc(n*sizeof(int));
+    int A[n];
 
-    printf("Digite os valores do vetor:");
-    for(x=0; x<n; x++){
+    printf("Digite os valores do vetor:\n");
+    for(int x=0; x<n; x++){
         scanf("%d ", &A[x]);
     }
 
     bubbleSort(A, n);
-
-    for(x=0; x<n; x++){
-        printf("%d ", A[x]);
-    }
 }

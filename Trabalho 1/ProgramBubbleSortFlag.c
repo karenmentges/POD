@@ -5,7 +5,7 @@ void bubbleSort(int *A, int n){
     
     for(i=n-1; i>=1; i--){
         flag = 0; //false
-        for(j=0; j<i; j++){
+        for(j=0; j<=i-1; j++){
             if(A[j] > A[j+1]){
                 aux = A[j];
                 A[j] = A[j+1];

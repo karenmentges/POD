@@ -3,9 +3,9 @@
 void insertionSort(int *A, int n){
     int i, j, aux, p;
     
-    for(i=1; i<=n-1; i++){
+    for(i=1; i<=(n-1); i++){
         p = A[i];
-        for(j=i; j>=1 && p<A[j-1]; j--){
+        for(j=i; (j>=1) && (p<A[j-1]); j--){
             A[j] = A[j-1];
         }
         A[j] = p;

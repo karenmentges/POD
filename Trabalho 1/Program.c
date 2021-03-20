@@ -96,6 +96,7 @@ int main(){
     int vet1[10000],  vet1c[10000],  vet1d[10000];
     int vet2[50000],  vet2c[50000],  vet2d[50000];
     int vet3[100000], vet3c[100000], vet3d[100000];
+    clock_t start, end;
 
     // Vetores de dez mil elementos (em ordem aleatória, crescente e decrescente)
     gerarVetor(vet1, 10000);
@@ -114,4 +115,192 @@ int main(){
     copiarVetor(vet3, vet3c, 100000);
     selectionSort(vet3c, 100000);
     organizaDecresc(vet3c, vet3d, 100000);    
+
+
+
+    // Calculando tempo para os vetores de dez mil elementos com o BubbleSort
+    start = clock();
+    bubbleSort(vet1, 10000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nBubble Sort: Vetor de 10.000 elementos, em ordem Aleatória\n\tTempo em s: %lf", difTempo);
+    
+    start = clock();
+    bubbleSort(vet1c, 10000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nBubble Sort: Vetor de 10.000 elementos, em ordem Crescente\n\tTempo em s: %lf", difTempo);
+    
+    start = clock();
+    bubbleSort(vet1d, 10000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nBubble Sort: Vetor de 10.000 elementos, em ordem Decrescente\n\tTempo em s: %lf", difTempo);
+
+
+    // Calculando tempo para os vetores de dez mil elementos com o InsertionSort
+    start = clock();
+    insertionSort(vet1, 10000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nInsertion Sort: Vetor de 10.000 elementos, em ordem Aleatória\n\tTempo em s: %lf", difTempo);
+
+    start = clock();
+    insertionSort(vet1c, 10000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nInsertion Sort: Vetor de 10.000 elementos, em ordem Crescente\n\tTempo em s: %lf", difTempo);
+
+    start = clock();
+    insertionSort(vet1d, 10000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nInsertion Sort: Vetor de 10.000 elementos, em ordem Decrescente\n\tTempo em s: %lf", difTempo);
+
+
+    // Calculando tempo para os vetores de dez mil elementos com o SelectionSort
+    start = clock();
+    selectionSort(vet1, 10000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nSelection Sort: Vetor de 10.000 elementos, em ordem Aleatória\n\tTempo em s: %lf", difTempo);
+
+    start = clock();
+    selectionSort(vet1c, 10000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nSelection Sort: Vetor de 10.000 elementos, em ordem Crescente\n\tTempo em s: %lf", difTempo);
+
+    start = clock();
+    selectionSort(vet1d, 10000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nSelection Sort: Vetor de 10.000 elementos, em ordem Decrescente\n\tTempo em s: %lf", difTempo);
+
+
+
+
+
+    // Calculando tempo para os vetores de cinquenta mil elementos com o BubbleSort
+    start = clock();
+    bubbleSort(vet2, 50000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nBubble Sort: Vetor de 50.000 elementos, em ordem Aleatória\n\tTempo em s: %lf", difTempo);
+    
+    start = clock();
+    bubbleSort(vet2c, 50000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nBubble Sort: Vetor de 50.000 elementos, em ordem Crescente\n\tTempo em s: %lf", difTempo);
+    
+    start = clock();
+    bubbleSort(vet2d, 50000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nBubble Sort: Vetor de 50.000 elementos, em ordem Decrescente\n\tTempo em s: %lf", difTempo);
+
+
+    // Calculando tempo para os vetores de cinquenta mil elementos com o InsertionSort
+    start = clock();
+    insertionSort(vet2, 50000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nInsertion Sort: Vetor de 50.000 elementos, em ordem Aleatória\n\tTempo em s: %lf", difTempo);
+
+    start = clock();
+    insertionSort(vet2c, 50000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nInsertion Sort: Vetor de 50.000 elementos, em ordem Crescente\n\tTempo em s: %lf", difTempo);
+
+    start = clock();
+    insertionSort(vet2d, 50000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nInsertion Sort: Vetor de 50.000 elementos, em ordem Decrescente\n\tTempo em s: %lf", difTempo);
+
+
+    // Calculando tempo para os vetores de cinquenta mil elementos com o SelectionSort
+    start = clock();
+    selectionSort(vet2, 50000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nSelection Sort: Vetor de 50.000 elementos, em ordem Aleatória\n\tTempo em s: %lf", difTempo);
+
+    start = clock();
+    selectionSort(vet2c, 50000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nSelection Sort: Vetor de 50.000 elementos, em ordem Crescente\n\tTempo em s: %lf", difTempo);
+
+    start = clock();
+    selectionSort(vet2d, 50000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nSelection Sort: Vetor de 50.000 elementos, em ordem Decrescente\n\tTempo em s: %lf", difTempo);
+
+
+
+
+
+    // Calculando tempo para os vetores de dez mil elementos com o BubbleSort
+    start = clock();
+    bubbleSort(vet3, 100000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nBubble Sort: Vetor de 100.000 elementos, em ordem Aleatória\n\tTempo em s: %lf", difTempo);
+    
+    start = clock();
+    bubbleSort(vet3c, 100000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nBubble Sort: Vetor de 100.000 elementos, em ordem Crescente\n\tTempo em s: %lf", difTempo);
+    
+    start = clock();
+    bubbleSort(vet3d, 100000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nBubble Sort: Vetor de 100.000 elementos, em ordem Decrescente\n\tTempo em s: %lf", difTempo);
+
+
+    // Calculando tempo para os vetores de dez mil elementos com o InsertionSort
+    start = clock();
+    insertionSort(vet3, 100000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nInsertion Sort: Vetor de 100.000 elementos, em ordem Aleatória\n\tTempo em s: %lf", difTempo);
+
+    start = clock();
+    insertionSort(vet3c, 100000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nInsertion Sort: Vetor de 100.000 elementos, em ordem Crescente\n\tTempo em s: %lf", difTempo);
+
+    start = clock();
+    insertionSort(vet3d, 100000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nInsertion Sort: Vetor de 100.000 elementos, em ordem Decrescente\n\tTempo em s: %lf", difTempo);
+
+
+    // Calculando tempo para os vetores de dez mil elementos com o SelectionSort
+    start = clock();
+    selectionSort(vet3, 100000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nSelection Sort: Vetor de 100.000 elementos, em ordem Aleatória\n\tTempo em s: %lf", difTempo);
+
+    start = clock();
+    selectionSort(vet3c, 100000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nSelection Sort: Vetor de 100.000 elementos, em ordem Crescente\n\tTempo em s: %lf", difTempo);
+
+    start = clock();
+    selectionSort(vet3d, 100000);
+    end = clock();
+    double difTempo = ((double) end - start)/CLOCKS_PER_SEC;
+    printf("\n\nSelection Sort: Vetor de 100.000 elementos, em ordem Decrescente\n\tTempo em s: %lf", difTempo);
+    
 }

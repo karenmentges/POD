@@ -19,7 +19,7 @@ void intercala(int A[], int inicio, int meio, int fim){
         }
         k++;
     }
-    
+
     while(i <= meio){
         auxiliar[k] = A[i];
         k++;
@@ -49,4 +49,26 @@ void mergeSort(int A[], int inicio, int fim){
         intercala(A, inicio, meio, fim);
     }
 
+}
+
+int main(){
+    int n;
+    
+    printf("Digite o tamanho do vetor:\n");
+    scanf("%d", &n);
+    int A[n];
+    int inicio = 0;
+    int fim = n;
+
+    printf("Digite os valores do vetor:\n");
+    for(int x=0; x<n; x++){
+        scanf("%d", &A[x]);
+    }
+
+    mergeSort(A, inicio, fim);
+
+    for(int i=0; i<n; i++){
+        printf("%d ", A[i]);
+    }
+    printf("\n");
 }

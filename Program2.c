@@ -175,7 +175,7 @@ void heapSort(int A[], int n){
 }
 
 
-void main(){
+int main(){
     int vet1[10000],  vet1c[10000],  vet1d[10000];
     int vet2[50000],  vet2c[50000],  vet2d[50000];
     int vet3[100000], vet3c[100000], vet3d[100000];

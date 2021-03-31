@@ -156,7 +156,7 @@ void criaHeap(int A[], int i, int n){
 
 void heapSort(int A[], int n){
 
-    int aux;
+    int aux = 0;
 
     for(int k = ((n/2)-1); k >= 0; k--){
         criaHeap(A, k, n);
@@ -173,7 +173,6 @@ void heapSort(int A[], int n){
 
 
 int main(){
-    int i, j;
     int vet1[10000],  vet1c[10000],  vet1d[10000];
     int vet2[50000],  vet2c[50000],  vet2d[50000];
     int vet3[100000], vet3c[100000], vet3d[100000];
@@ -186,7 +185,7 @@ int main(){
     // Vetores de dez mil elementos (em ordem aleatória, crescente e decrescente)
     gerarVetor(vet1, 10000);
     copiarVetor(vet1, vet1c, 10000);
-    quickSort(vet1c, 0, 10000);
+    heapSort(vet1c, 10000);
     organizaDecresc(vet1c, vet1d, 10000);
     
     start = clock();
@@ -213,7 +212,7 @@ int main(){
     // Vetores de dez mil elementos (em ordem aleatória, crescente e decrescente)
     gerarVetor(vet1, 10000);
     copiarVetor(vet1, vet1c, 10000);
-    quickSort(vet1c, 0, 10000);
+    heapSort(vet1c, 10000);
     organizaDecresc(vet1c, vet1d, 10000);
 
     start = clock();
@@ -240,7 +239,7 @@ int main(){
     // Vetores de dez mil elementos (em ordem aleatória, crescente e decrescente)
     gerarVetor(vet1, 10000);
     copiarVetor(vet1, vet1c, 10000);
-    quickSort(vet1c, 0, 10000);
+    heapSort(vet1c, 10000);
     organizaDecresc(vet1c, vet1d, 10000);
 
     start = clock();
@@ -270,7 +269,7 @@ int main(){
     // Vetores de cinquenta mil elementos (em ordem aleatória, crescente e decrescente)
     gerarVetor(vet2, 50000);
     copiarVetor(vet2, vet2c, 50000);
-    quickSort(vet2c, 0, 50000);
+    heapSort(vet2c, 50000);
     organizaDecresc(vet2c, vet2d, 50000);
 
     start = clock();
@@ -297,7 +296,7 @@ int main(){
     // Vetores de cinquenta mil elementos (em ordem aleatória, crescente e decrescente)
     gerarVetor(vet2, 50000);
     copiarVetor(vet2, vet2c, 50000);
-    quickSort(vet2c, 0, 50000);
+    heapSort(vet2c, 50000);
     organizaDecresc(vet2c, vet2d, 50000);
 
     start = clock();
@@ -324,7 +323,7 @@ int main(){
     // Vetores de cinquenta mil elementos (em ordem aleatória, crescente e decrescente)
     gerarVetor(vet2, 50000);
     copiarVetor(vet2, vet2c, 50000);
-    quickSort(vet2c, 0, 50000);
+    heapSort(vet2c, 50000);
     organizaDecresc(vet2c, vet2d, 50000);
 
     start = clock();
@@ -354,7 +353,7 @@ int main(){
     // Vetores de cem mil elementos (em ordem aleatória, crescente e decrescente)
     gerarVetor(vet3, 100000);
     copiarVetor(vet3, vet3c, 100000);
-    quickSort(vet3c, 0, 100000);
+    heapSort(vet3c, 100000);
     organizaDecresc(vet3c, vet3d, 100000); 
 
     start = clock();
@@ -381,7 +380,7 @@ int main(){
     // Vetores de cem mil elementos (em ordem aleatória, crescente e decrescente)
     gerarVetor(vet3, 100000);
     copiarVetor(vet3, vet3c, 100000);
-    quickSort(vet3c, 0, 100000);
+    heapSort(vet3c, 100000);
     organizaDecresc(vet3c, vet3d, 100000); 
 
     start = clock();
@@ -408,7 +407,7 @@ int main(){
     // Vetores de cem mil elementos (em ordem aleatória, crescente e decrescente)
     gerarVetor(vet3, 100000);
     copiarVetor(vet3, vet3c, 100000);
-    quickSort(vet3c, 0, 100000);
+    heapSort(vet3c, 100000);
     organizaDecresc(vet3c, vet3d, 100000); 
     
     start = clock();

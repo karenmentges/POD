@@ -3,7 +3,8 @@
 
 void intercala(int A[], int inicio, int meio, int fim){
     
-    int auxiliar[fim-inicio+1];
+    int tamanho = fim - inicio + 1;
+    int *auxiliar = malloc(tamanho * sizeof(int));
     int i = inicio;
     int j = meio + 1;
     int k = 0;

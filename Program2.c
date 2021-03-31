@@ -4,10 +4,8 @@
 
 int *gerarVetor(int *vet, int n){
 
-    int i;
-
     srand(time(NULL));
-    for(i = 0; i < n; i++) {
+    for(int i = 0; i < n; i++) {
         vet[i] = rand() % (n*100);
     } 
 
@@ -17,8 +15,7 @@ int *gerarVetor(int *vet, int n){
 
 int *copiarVetor(int *vet1, int *vet2, int n){
     
-    int i;
-    for(i = 0; i < n; i++) {
+    for(int i = 0; i < n; i++) {
         vet2[i] = vet1[i];
     } 
     
@@ -99,9 +96,9 @@ int particiona(int A[], int inicio, int fim){
     
     int pivo = fim;
     int k = inicio;
-    int aux, i;
+    int aux = 0;
 
-    for(i = inicio; i < fim; i++){
+    for(int i = inicio; i < fim; i++){
         if(A[i] <= A[pivo]){
             aux = A[i];
             A[i] = A[k];
@@ -121,7 +118,7 @@ int particiona(int A[], int inicio, int fim){
 }
 
 void quickSort(int A[], int inicio, int fim){
-    int pivo;
+    int pivo = 0;
 
     if(inicio < fim){
         pivo = particiona(A, inicio, fim);
@@ -159,13 +156,13 @@ void criaHeap(int A[], int i, int n){
 
 void heapSort(int A[], int n){
 
-    int aux, k;
+    int aux = 0;
 
-    for(k = ((n/2)-1); k >= 0; k--){
+    for(int k = ((n/2)-1); k >= 0; k--){
         criaHeap(A, k, n);
     }
 
-    for(k = (n-1); k >= 1; k--){
+    for(int k = (n-1); k >= 1; k--){
         aux = A[0];
         A[0] = A[k];
         A[k] = aux;
@@ -209,12 +206,13 @@ int main(){
     difTempo = ((double) end - start)/CLOCKS_PER_SEC;
     printf("\n\nMerge Sort: Vetor de 10.000 elementos, em ordem Decrescente\n\tTempo em ms: %lf", difTempo*1000);
 
+
     // Calculando tempo para os vetores de dez mil elementos com o Quick Sort
 
     // Vetores de dez mil elementos (em ordem aleatória, crescente e decrescente)
     gerarVetor(vet1, 10000);
     copiarVetor(vet1, vet1c, 10000);
-    mergeSort(vet1c, 0, 10000);
+    heapSort(vet1c, 10000);
     organizaDecresc(vet1c, vet1d, 10000);
 
     start = clock();
@@ -429,5 +427,7 @@ int main(){
     end = clock();
     difTempo = ((double) end - start)/CLOCKS_PER_SEC;
     printf("\n\nHeap Sort: Vetor de 100.000 elementos, em ordem Decrescente\n\tTempo em ms: %lf", difTempo*1000);
+
+    return 0;
 
 }

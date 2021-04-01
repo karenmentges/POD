@@ -1,0 +1,170 @@
+./Program2.run
+
+
+Merge Sort: Vetor de 10.000 elementos, em ordem Aleatoria
+        Tempo em ms: 3.138000
+
+Merge Sort: Vetor de 10.000 elementos, em ordem Crescente
+        Tempo em ms: 2.116000
+
+Merge Sort: Vetor de 10.000 elementos, em ordem Decrescente
+        Tempo em ms: 1.870000
+
+Quick Sort: Vetor de 10.000 elementos, em ordem Aleatoria
+        Tempo em ms: 1.816000
+
+Quick Sort: Vetor de 10.000 elementos, em ordem Crescente
+        Tempo em ms: 545.162000
+
+Quick Sort: Vetor de 10.000 elementos, em ordem Decrescente
+        Tempo em ms: 420.572000
+
+Heap Sort: Vetor de 10.000 elementos, em ordem Aleatoria
+        Tempo em ms: 3.444000
+
+Heap Sort: Vetor de 10.000 elementos, em ordem Crescente
+        Tempo em ms: 3.017000
+
+Heap Sort: Vetor de 10.000 elementos, em ordem Decrescente
+        Tempo em ms: 2.841000
+
+Merge Sort: Vetor de 50.000 elementos, em ordem Aleatoria
+        Tempo em ms: 16.984000
+
+Merge Sort: Vetor de 50.000 elementos, em ordem Crescente
+        Tempo em ms: 11.660000
+
+Merge Sort: Vetor de 50.000 elementos, em ordem Decrescente
+        Tempo em ms: 11.379000
+
+Quick Sort: Vetor de 50.000 elementos, em ordem Aleatoria
+        Tempo em ms: 11.755000
+
+Quick Sort: Vetor de 50.000 elementos, em ordem Crescente
+        Tempo em ms: 14310.978000
+
+Quick Sort: Vetor de 50.000 elementos, em ordem Decrescente
+        Tempo em ms: 10157.193000
+
+Heap Sort: Vetor de 50.000 elementos, em ordem Aleatoria
+        Tempo em ms: 22.065000
+
+Heap Sort: Vetor de 50.000 elementos, em ordem Crescente
+        Tempo em ms: 18.564000
+
+Heap Sort: Vetor de 50.000 elementos, em ordem Decrescente
+        Tempo em ms: 17.728000
+
+Merge Sort: Vetor de 100.000 elementos, em ordem Aleatoria
+        Tempo em ms: 42.267000
+
+Merge Sort: Vetor de 100.000 elementos, em ordem Crescente
+        Tempo em ms: 24.213000
+
+Merge Sort: Vetor de 100.000 elementos, em ordem Decrescente
+        Tempo em ms: 23.954000
+
+Quick Sort: Vetor de 100.000 elementos, em ordem Aleatoria
+        Tempo em ms: 24.937000
+
+Quick Sort: Vetor de 100.000 elementos, em ordem Crescente
+        Tempo em ms: 60058.878000
+
+Quick Sort: Vetor de 100.000 elementos, em ordem Decrescente
+        Tempo em ms: 42726.402000
+
+Heap Sort: Vetor de 100.000 elementos, em ordem Aleatoria
+        Tempo em ms: 49.239000
+
+Heap Sort: Vetor de 100.000 elementos, em ordem Crescente
+        Tempo em ms: 38.793000
+
+Heap Sort: Vetor de 100.000 elementos, em ordem Decrescente
+        Tempo em ms: 36.806000
+
+
+
+
+
+
+
+Merge Sort: Vetor de 10.000 elementos, em ordem Aleatoria
+        Tempo em ms: 5.192000
+
+Merge Sort: Vetor de 10.000 elementos, em ordem Crescente
+        Tempo em ms: 1.838000
+
+Merge Sort: Vetor de 10.000 elementos, em ordem Decrescente
+        Tempo em ms: 2.029000
+
+Quick Sort: Vetor de 10.000 elementos, em ordem Aleatoria
+        Tempo em ms: 1.926000
+
+Quick Sort: Vetor de 10.000 elementos, em ordem Crescente
+        Tempo em ms: 566.742000
+
+Quick Sort: Vetor de 10.000 elementos, em ordem Decrescente
+        Tempo em ms: 394.492000
+
+Heap Sort: Vetor de 10.000 elementos, em ordem Aleatoria
+        Tempo em ms: 3.431000
+
+Heap Sort: Vetor de 10.000 elementos, em ordem Crescente
+        Tempo em ms: 3.042000
+
+Heap Sort: Vetor de 10.000 elementos, em ordem Decrescente
+        Tempo em ms: 2.947000
+
+Merge Sort: Vetor de 50.000 elementos, em ordem Aleatoria
+        Tempo em ms: 16.018000
+
+Merge Sort: Vetor de 50.000 elementos, em ordem Crescente
+        Tempo em ms: 12.430000
+
+Merge Sort: Vetor de 50.000 elementos, em ordem Decrescente
+        Tempo em ms: 11.136000
+
+Quick Sort: Vetor de 50.000 elementos, em ordem Aleatoria
+        Tempo em ms: 11.302000
+
+Quick Sort: Vetor de 50.000 elementos, em ordem Crescente
+        Tempo em ms: 14478.959000
+
+Quick Sort: Vetor de 50.000 elementos, em ordem Decrescente
+        Tempo em ms: 10171.115000
+
+Heap Sort: Vetor de 50.000 elementos, em ordem Aleatoria
+        Tempo em ms: 28.592000
+
+Heap Sort: Vetor de 50.000 elementos, em ordem Crescente
+        Tempo em ms: 19.407000
+
+Heap Sort: Vetor de 50.000 elementos, em ordem Decrescente
+        Tempo em ms: 18.101000
+
+Merge Sort: Vetor de 100.000 elementos, em ordem Aleatoria
+        Tempo em ms: 34.989000
+
+Merge Sort: Vetor de 100.000 elementos, em ordem Crescente
+        Tempo em ms: 34.727000
+
+Merge Sort: Vetor de 100.000 elementos, em ordem Decrescente
+        Tempo em ms: 23.880000
+
+Quick Sort: Vetor de 100.000 elementos, em ordem Aleatoria
+        Tempo em ms: 24.670000
+
+Quick Sort: Vetor de 100.000 elementos, em ordem Crescente
+        Tempo em ms: 59351.188000
+
+Quick Sort: Vetor de 100.000 elementos, em ordem Decrescente
+        Tempo em ms: 42312.342000
+
+Heap Sort: Vetor de 100.000 elementos, em ordem Aleatoria
+        Tempo em ms: 48.064000
+
+Heap Sort: Vetor de 100.000 elementos, em ordem Crescente
+        Tempo em ms: 38.613000
+
+Heap Sort: Vetor de 100.000 elementos, em ordem Decrescente
+        Tempo em ms: 36.390000

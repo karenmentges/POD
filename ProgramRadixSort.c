@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 int buscaMax(int A[], int n){
     int max = A[0];
@@ -14,7 +15,7 @@ int buscaMax(int A[], int n){
 
 void countingSort(int A[], int n, int pos){
     int *aux = malloc(n * sizeof(int));
-    int count[10] = 0;
+    int *count = calloc(10, sizeof(int));
     int digito;
 
     for(int i=0; i<n; i++){

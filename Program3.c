@@ -1,25 +1,31 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
 
-int buscaMax(int A[], int n){
-    int max = A[0];
+typedef struct {
+    int codigo;
+    char nome[41];
+} Produto;
+
+int buscaMax(Produto A[], int n){
+    int max = A[0].codigo;
     
     for(int i=1; i<n; i++){
-        if(A[i]>max){
-            max = A[i];
+        if(A[i].codigo>max){
+            max = A[i].codigo;
         }
     }
     
     return max;
 }
 
-void countingSort(int A[], int n, int pos){
-    int *aux = malloc(n * sizeof(int));
+void countingSort(Produto A[], int n, int pos){
+    Produto *aux = malloc(n * sizeof(Produto));
     int *count = calloc(10, sizeof(int));
     int digito;
 
     for(int i=0; i<n; i++){
-        digito = (A[i]/pos) % 10;
+        digito = (A[i].codigo/pos) % 10;
         count[digito]++;
     }
 
@@ -28,18 +34,20 @@ void countingSort(int A[], int n, int pos){
     }
 
     for(int i = n-1; i>=0; i--){
-        digito = (A[i]/pos) % 10;
+        digito = (A[i].codigo/pos) % 10;
         count[digito]--;
-        aux[count[digito]] = A[i];
+        aux[count[digito]].codigo = A[i].codigo;
+        strcpy(aux[count[digito]].nome, A[i].nome);
     }
 
     for(int i=0; i<n; i++){
-        A[i] = aux[i];
+        A[i].codigo = aux[i].codigo;
+        strcpy(A[i].nome, aux[i].nome);
     }
 
 }
 
-void radixSort(int A[], int n){
+void radixSort(Produto A[], int n){
     int max = 0;
     
     max = buscaMax(A, n);
@@ -49,21 +57,29 @@ void radixSort(int A[], int n){
 }
 
 int main(){
-    int n;
-    
-    printf("Digite o tamanho do vetor:\n");
-    scanf("%d", &n);
-    int A[n];
+    Produto A[10];
 
-    printf("Digite os valores do vetor:\n");
-    for(int x=0; x<n; x++){
-        scanf("%d", &A[x]);
+    for(int x=0; x<10; x++){
+        printf("Digite o codigo de 3 digitos do produto: ");
+        scanf("%d", &A[x].codigo);
+        printf("Digite o nome do produto: ");
+        scanf("\n");
+        fgets(A[x].nome, sizeof(A[x].nome), stdin);
+        A[x].nome[strcspn(A[x].nome, "\n")] = '\0';
     }
 
-    radixSort(A, n);
+    printf("\n\nVetor antes da ordenacao:\n");
+    printf("\nCodigo - Nome\n");
+    for(int x=0; x<10; x++){
+        printf("%d      %s\n", A[x].codigo, A[x].nome);
+    }
 
-    for(int i=0; i<n; i++){
-        printf("%d ", A[i]);
+    radixSort(A, 10);
+
+    printf("\n\nVetor depois da ordenacao:\n");
+    printf("\nCodigo - Nome\n");
+    for(int x=0; x<10; x++){
+        printf("%d      %s\n", A[x].codigo, A[x].nome);
     }
     printf("\n");
 }

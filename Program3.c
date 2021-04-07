@@ -57,16 +57,7 @@ void radixSort(Produto A[], int n){
 }
 
 int main(){
-    Produto A[10];
-
-    for(int x=0; x<10; x++){
-        printf("Digite o codigo de 3 digitos do produto: ");
-        scanf("%d", &A[x].codigo);
-        printf("Digite o nome do produto: ");
-        scanf("\n");
-        fgets(A[x].nome, sizeof(A[x].nome), stdin);
-        A[x].nome[strcspn(A[x].nome, "\n")] = '\0';
-    }
+    Produto A[10] = {{115, "Sabonete"}, {225, "Shampoo"}, {102, "Esponja"}, {226, "Condicionador"}, {800, "Spray para Cabelo"}, {458, "Cotonete"}, {222, "Mascara Capilar"}, {444, "Discos de Algodao"}, {534, "Creme Dental"}, {522, "Escova Dental"}};
 
     printf("\n\nVetor antes da ordenacao:\n");
     printf("\nCodigo - Nome\n");

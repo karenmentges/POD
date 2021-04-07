@@ -1,10 +1,11 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 int main() {
 
     // Leitura do texto
-    FILE *arq = fopen("Poem.aul", "r+");
+    FILE *arq = fopen("Poem.txt", "r+");
     if(arq == NULL){
         printf("Não foi possível acessar o arquivo!");
         exit(1);

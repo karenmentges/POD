@@ -4,3 +4,10 @@ Condicionador - 2 - 15.30
 Mascara - 2 - 25.90
 Esponja - 1 - 8.90
 Esfoliante - 1 - 20.00
+
+Condimentos - 5 - 7.00
+Vinhagre - 1 - 9.20
+Oleo - 2 - 11.90
+Carne - 6 - 25.00
+Alface - 2 - 1.20
+Tomate - 12 - 1.30

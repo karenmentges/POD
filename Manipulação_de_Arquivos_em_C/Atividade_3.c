@@ -6,7 +6,7 @@ int main() {
 
     int op, matricula[10], total;
     char nome[41];
-    float IAA;
+    double *IAA;
 
     // Adicionando alunos
     FILE *arq = fopen("ListadeAlunos.bin", "wb");
@@ -36,7 +36,12 @@ int main() {
             if(total != 41)
                 printf("Erro na gravação");
             }
-            fwrite(IAA, sizeof(double), 1, arq);
+            total = fwrite(IAA, sizeof(double), 1, arq);
+            if(total != 1)
+                printf("Erro na gravação");
+        }
+    
     }
+
     
 }

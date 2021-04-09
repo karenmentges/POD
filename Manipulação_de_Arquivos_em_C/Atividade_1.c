@@ -37,7 +37,7 @@ int main() {
             }
         }  
     }   
-    fclose(arq);   
+    fclose(arq);  
     
     // Gravação do texto em outro arquivo
     FILE *arq2 = fopen("Poem2.txt", "w");
@@ -45,12 +45,8 @@ int main() {
         printf("Não foi possível acessar o arquivo!");
         exit(1);
     }
-    char a = 'a';
-    putc(a, arq2);
     for(i=0; i<229; i++){
-        c = texto[i];
-        putc(c, arq2);
-        printf("%c", c);
+        fputc(texto[i], arq2);
     }
     fclose(arq2);
 

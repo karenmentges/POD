@@ -5,7 +5,7 @@
 int main() {
 
     char c;
-    char texto[229];
+    char texto[238];
     int i;
 
     // Leitura do texto
@@ -45,7 +45,7 @@ int main() {
         printf("Não foi possível acessar o arquivo!");
         exit(1);
     }
-    for(i=0; i<229; i++){
+    for(i=0; i<238; i++){
         fputc(texto[i], arq2);
     }
     fclose(arq2);

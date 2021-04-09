@@ -5,8 +5,8 @@
 
 int main() {
     char nome[40];
-    int quantidade, vtp = 0, vtc = 0;
-    double preco;
+    int quantidade;
+    double preco, vtp = 0, vtc = 0;
 
     // Leitura da lista
     FILE *arq = fopen("ListadeCompras.txt", "r");
@@ -15,13 +15,13 @@ int main() {
         exit(1);
     }
     while(!feof(arq)){
-        fscanf(arq, "%s - %d - %d\n", nome, &quantidade, &preco);
+        fscanf(arq, "%s - %d - %lf\n", nome, &quantidade, &preco);
         vtp = quantidade * preco;
-        printf("%s %d\n", nome, vtp);
+        printf("%s %lf\n", nome, vtp);
         vtc = vtc + vtp;
     }
 
-    printf("Total: %d\n", vtc);
+    printf("\nTotal: %lf\n", vtc);
     
     fclose(arq);  
 
